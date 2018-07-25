@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display" rel="stylesheet" >
+
+<link rel="stylesheet" href="aos/aos.css">
+
+
+</head>
+
+<title>
+Callum Radford App design.
+</title>
+
+
+<style>
+
+body{
+  background-color: #0d0f10;
+  /* background-color: #030b14; */
+  /* background-color: #161616; */
+  color: #e9e9e9;
+margin: 0;
+}
+
+
+footer{
+  /* background-color: black; */
+  height: 600px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 0.8rem;
+  /* color: white; */
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 170px;
+}
+
+@font-face {
+  font-family: 'HKGrotesk';
+  src: url(Fonts/HKGrotesk-Light.woff);
+
+}
+
+@font-face {
+  font-family: 'UniversBold';
+  src: url(Fonts/Univers/UniversLTStd-Bold.otf);
+
+}
+
+@font-face {
+  font-family: 'UniversSTD';
+  src: url(Fonts/Univers/UniversLTStd.otf);
+
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url(FuturaMediumItalicfont.ttf);
+
+}
+
+@font-face {
+    font-family: 'butlermedium';
+    src: url('butler_medium-webfont.woff2') format('woff2'),
+         url('butler_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+font-family: 'Modern No. 20';
+font-style: normal;
+font-weight: normal;
+src: local('Modern No. 20'), url('MOD20.woff') format('woff');
+}
+
+
+.back{
+  font-family: 'UniversSTD', sans-serif;
+  font-size: 1.3rem;
+  /* color: white; */
+max-width: 20px;
+padding-left: 90px;
+
+
+
+}
+
+.back a {
+  color: Black;
+  text-decoration: none;
+  /* font-family: 'Modern No. 20'; */
+
+}
+
+.back a:hover{
+  opacity: 0.7;
+}
+
+
+ul {
+  list-style: none;
+
+  padding: 0;
+}
+
+a {
+  display: block;
+  padding: 20px;
+}
+
+
+li {
+  display: inline-block;
+  padding: 20px;
+}
+
+span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+span:before, span:after {
+  content: '';
+  opacity: 0.6;
+  position: absolute;
+  width: 0%;
+  height: 2.5px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: red;
+}
+
+span:before {
+  left: -2.5px;
+  opacity: 0.6;
+}
+span:after {
+  right: 2.5px;
+  opacity: 0.6;
+    background: red;
+  transition: width 0.8s cubic-bezier(0.8, 1.61, 0.36, 1);
+}
+
+span:hover:before {
+    background: red;
+    opacity: 0.6;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+
+
+.year{
+  font-family: 'UniversSTD', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 9px;
+  opacity: 0.9;
+  /* color: white; */
+  float: right;
+  margin-right: 60px;
+
+}
+.year2{
+  font-family: 'Futura', sans-serif;
+  font-size: 2.2rem;
+  float: right;
+  padding-top: 13px;
+  opacity: 0.8;
+  /* color: white; */
+
+  /* margin-right: 60px; */
+
+}
+
+
+.wonderbody{
+background-image: url('Images/.png');
+
+background-size: 100%;
+/* background-repeat: repeat-y; */
+  /* height: 1200px; */
+/* background-color: #e94546; */
+margin-top: 700px;
+background-position: 0px -130px;
+
+
+}
+
+.line{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  height: 1px;
+  margin-top: 10px;
+  background-color: white;
+
+}
+
+.wonder{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  /* border-top: 5px solid white; */
+
+
+  /* text-decoration: underline; */
+  font-family: , serif;
+  font-size: 3rem;
+  /* font-style: italic; */
+  opacity: 0.9;
+  padding-top: 40px;
+  font-family: 'UniversBold', serif;
+
+
+
+  /* font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  letter-spacing: 3px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 180px;
+  color: white;
+  font-size: 6rem;
+  /* font-style: italic; */
+  /* text-align: center;
+  opacity: 0.8; */ */
+
+}
+
+.wonderLogo{
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
+  align-items: center;
+  max-width: 90px;
+
+
+}
+.wondertitle{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28px;
+  max-width: 60px;
+  font-size: 1.1rem;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  letter-spacing: 3px;
+  opacity: 0.8;
+  margin-top: -100px;
+
+}
+
+.UIdesign{
+  margin-left: auto;
+margin-right: auto;
+  /* padding-left: 38px; */
+  max-width: 1000px;
+  /* background-color: red; */
+  font-size: 1.1rem;
+  color: white;
+  font-family: 'Futura', sans-serif;
+  font-weight: 100;
+  /* font-style: italic; */
+  letter-spacing: 3px;
+  padding-top: 80px;
+  opacity: 0.8;
+
+}
+
+.wonderUI{
+  max-width: 900px;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+margin-top: 20px;
+padding-right: 150px;
+
+}
+
+
+.aboutme{
+max-width: 100%;
+height: 600px;
+background-color: white;
+margin-left: auto;
+margin-right: auto;
+margin-top: 180px;
+
+
+
+}
+
+
+
+
+
+.aboutmetext{
+  font-family: 'butlermedium', sans-serif;
+  font-size: 5rem;
+  padding-top: 90px;
+
+font-style: italic;
+  max-width:1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+letter-spacing: 1px;
+}
+
+.about{
+  font-family: 'Open Sans Condensed', sans-serif;
+  max-width: 800px;;
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  margin-top: 60px;
+
+}
+
+
+.title{
+  /* color: white; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  border-top: 5px solid white;
+
+  /* text-decoration: underline; */
+  font-family: , serif;
+  font-size: 5rem;
+  /* font-style: italic; */
+  opacity: 0.9;
+  padding-top: 90px;
+  font-family: 'UniversBold', serif;
+
+
+}
+
+.w{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  /* background-color: red; */
+
+/* margin-top: 00px; */
+
+}
+.IMG{
+
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  max-width: 100%;
+  padding-top: 50px;
+  /* background-color: blue; */
+
+}
+
+
+.IMG2{
+
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: -50px;
+  max-width: 100%;
+  padding-top: 50px;
+  /* background-color: blue; */
+
+}
+
+
+.IMG3{
+
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 20px;
+  max-width: 100%;
+  padding-top: 50px;
+  /* background-color: blue; */
+
+}
+
+
+
+.Vid{
+  width: 50%;
+  margin-left: 140px;
+  margin-right: auto;
+margin-top: 60px;
+margin-bottom: 160px;
+
+}
+
+
+.GoRidebody{
+  background-color: #030b14;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 100px;
+
+}
+
+
+.GoRide{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  letter-spacing: 3px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 180px;
+  color: white;
+  font-size: 6rem;
+  /* font-style: italic; */
+  text-align: center;
+  opacity: 0.8;
+}
+
+.wndrBody{
+  background-color: #c82e52;
+}
+
+.justDrink{
+  background-color: #e1415d;
+  height: 1400px;
+}
+
+@media only screen and (max-width: 1140px)  {
+  .w{
+    max-width: 100%
+
+  }
+
+  .IMG{
+    padding-left: 0px;
+    width: 90%;
+
+
+  }
+  .wonderIMG{
+
+
+
+text-align: center;
+    width: 100%;
+float: center;
+padding-left: 90px;
+
+
+  }
+
+  .wonderUI{
+max-width: 900px;
+
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+
+
+
+
+
+  }
+
+.aboutmetext{
+  width:90%;
+  font-size: 3.7rem;
+
+}
+
+.about{
+  width: 90%;
+
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 635px)  {
+
+.w{
+  max-width: 600px;;
+
+}
+
+.IMG{
+  /* padding-left: 0px; */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blue;
+
+}
+
+.wonderIMG{
+  margin-left: 0px;
+  margin-right:0px;
+
+  padding-left: 0px;
+  width: 100%;
+
+
+
+}
+
+.wonderUI{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+}
+
+
+.dw{
+  color: white;
+  float: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+margin-left: auto;
+margin-right: auto;
+max-width: 300px;
+text-align: center;
+letter-spacing: 3px;
+opacity: 0.9;
+margin-top: 100px;
+
+}
+
+</style>
+
+
+<body>
+<div class="back">
+
+  <ul >
+
+    <a href="index.html"><img src="Images/Arrow.png" width="35px"></a>
+
+
+  </ul>
+</div>
+<div class="year">
+2018.
+</div>
+
+<div class="title">
+Print design.
+
+
+</div>
+
+
+
+<div class="wonderbody">
+
+  <div class="wonder" data-aos="fade-up">
+    Cycle Welly.
+<div class="year2">
+01.
+</div>
+  </div>
+
+<div class="line"> </div>
+
+
+
+
+  <div class="UIdesign" data-aos="fade-up">
+
+  </div>
+
+
+
+  <div class="w">
+
+  <img class="IMG" src="Images/Brochure/Brochure-1.jpg" width="600px" data-aos="fade-up" >
+  <img class="IMG" src="Images/Brochure/Brochure-2.jpg" width="600px" data-aos="fade-up" >
+    <img class="IMG" src="Images/Brochure/Brochure-3.jpg" width="600px" data-aos="fade-up" >
+      <img class="IMG" src="Images/Brochure/Brochure-4.jpg" width="600px" data-aos="fade-up" >
+        <img class="IMG" src="Images/Brochure/Brochure-5.jpg" width="600px" data-aos="fade-up" >
+          <img class="IMG" src="Images/Brochure/Brochure-6.jpg" width="600px" data-aos="fade-up" >
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="GoRidebody">
+
+
+
+
+  <div class="wonder" data-aos="fade-up">
+PAV.
+<div class="year2">
+02.
+</div>
+  </div>
+
+<div class="line"> </div>
+
+
+
+
+  <div class="UIdesign" data-aos="fade-up">
+    Just some quick graphic design work I have done.
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="w" >
+
+    <img class="IMG" src="Images/Pav/PAVlogo.png" width="600px" data-aos="fade-up" >
+    <img class="IMG" src="Images/Pav/PAV1.jpg" width="600px" data-aos="fade-up" >
+      <img class="IMG" src="Images/Pav/PavPhoto.jpg" width="600px" data-aos="fade-up" >
+  <!-- <video class="Vid" autoplay loop src="Video/Clockvid_1.mp4">           <source  type="video/mp4">
+          Your browser does not support HTML5 video :(.
+        </video> -->
+
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="aos/aos.js"></script>
+<script type="text/javascript">
+
+// $(window).scroll(function(){
+//     $(".title").css("opacity", 1 - $(window).scrollTop()  );
+//       $(".name").css("opacity", 1 - $(window).scrollTop() );
+//         $(".nav").css("opacity", 1 - $(window).scrollTop() );
+//
+//   });
+
+AOS.init({
+  duration: 800
+});
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</body>
+
+<footer >
+  <div id="ct">
+<h2>Contact me.</h2>
+<br>
+<br>
+email: callumradford26@gmail.com
+<br>
+<br>
+Phone: 021557086
+<br>
+<br>
+
+
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+</html>
