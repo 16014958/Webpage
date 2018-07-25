@@ -348,6 +348,8 @@ opacity: 0.7;
 
 .workDisply1{
 width: 100%;
+margin-left: auto;
+margin-left: auto;
 font-family: 'UniversSTD', sans-serif;
 color: white;
 font-size: 1.3rem;
@@ -357,7 +359,9 @@ margin-top: 300px;
 }
 
 .workDisply2{
-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-left: auto;
 font-size: 1.3rem;
 color: white;
 font-family: 'UniversSTD', sans-serif;
@@ -373,7 +377,8 @@ height: 200px;
   background-color: grey;
   height: 200px;
   float: left;
-  margin-left: 3%;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 20px;
 
 }
@@ -393,10 +398,11 @@ height: 200px;
   color: white;
   text-decoration: none;
   background-color: grey;
-  width: 25%;
+width: 25%;
   float: left;
   height: 200px;
-  margin-left: 3%;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 20px;
   z-index: 10;
 }
@@ -406,7 +412,7 @@ height: 200px;
   text-decoration: none;
   text-align: center;
   padding-top: 95px;
-  width: 857;
+  width: 87%;
   height: 85px;
 }
 
@@ -546,5 +552,141 @@ font-family: 'Futura', sans-serif;
 font-size: 1rem;
 opacity: 0.5;
 color: red;
+
+}
+
+
+
+
+
+
+
+/* Media quareys */
+
+
+
+@media only screen and (max-width: 1200px)  {
+
+  .Twowide{
+    width: 35%;
+
+
+}
+
+.Onewide{
+  width: 23%;
+
+}
+
+
+
+
+.logo{
+  background-size: 130%;
+  background-position: -30px -60px;
+}
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px){
+
+.logo{
+  background-size: 180%;
+
+}
+
+
+.photo    {
+    background-size: 160%;
+    background-position: -90px;
+}
+
+.game{
+  background-size: 240%;
+  background-position: -90px;
+}
+
+.print   {
+    background-size: 190%;
+    background-position: -90px;
+}
+
+.web   {
+    background-size: 160%;
+    background-position: -90px;
+}
+
+.app{
+  background-size: 160%;
+  background-position: -90px;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 760px){
+
+.nav {
+  display: none;
+}
+
+
+
+
+.x2{
+position: absolute;
+left: 14px;
+top: 20%;
+font-family: 'Futura', sans-serif;
+font-size: 1.6rem;
+opacity: 0.86;
+color: white;
+
+}
+
+
+.Twowide{
+  width: 40%;
+
+
+}
+
+.Onewide{
+width: 40%;
+
+}
+
+.Twowide a{
+  width: 93%;
+
+
+}
+
+.Onewide a{
+width: 93%;
+
+}
+
+
+ .Onewide a:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 40px #414141;
+
+}
+
+.Twowide a:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 40px #414141;
+}
+
 
 }
